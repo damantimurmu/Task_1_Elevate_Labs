@@ -1,6 +1,7 @@
 # Task_1_Elevate_Labs
 Data Cleaning and Preprocessing
-- Mall Customer Segmentation Data
+- Medical Appointment No Shows
+- Tool Used: Excel
 
 ## Summary of Changes
 
