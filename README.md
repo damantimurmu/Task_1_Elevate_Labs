@@ -1,16 +1,14 @@
 # Task_1_Elevate_Labs
 Data Cleaning and Preprocessing
 - Medical Appointment No Shows
-- Tool Used: Excel
+- Tool Used: Microsoft Excel
 
 ## Summary of Changes
 
-- Checked for missing values using COUNTBLANK.
+The following data cleaning steps were taken:
 
-- Identified duplicates via Conditional Formatting.
-
-- Standardized headers by applying the LOWER function and manually removing spaces.
-
-- Flash Fill and the LEFT function were used for date extraction.
-
-- Ensured correct data types by formatting numbers as Numbers and text as general.
+- Missing Values Check: COUNTBLANK was used to identify missing values.
+- Duplicate Identification: Conditional Formatting was applied to detect duplicate entries.
+- Header Standardization: The LOWER function was used to standardize header names, and spaces were manually removed.
+- Date Extraction: Flash Fill and the LEFT function were utilized to extract dates.
+- Data Type Verification: Numbers were formatted as Numbers and text as General to ensure correct data types.
