@@ -5,7 +5,7 @@ Data Cleaning and Preprocessing
 
 ## Summary of Changes
 
-The following data cleaning steps were taken:
+The following data-cleaning steps were taken:
 
 - Missing Values Check: COUNTBLANK was used to identify missing values.
 - Duplicate Identification: Conditional Formatting was applied to detect duplicate entries.
