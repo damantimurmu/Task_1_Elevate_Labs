@@ -7,8 +7,8 @@ Data Cleaning and Preprocessing
 
 - Identified duplicates via Conditional Formatting.
 
-- Flash Fill and the LEFT function were used for date extraction.
-
 - Standardized headers by applying the LOWER function and manually removing spaces.
+
+- Flash Fill and the LEFT function were used for date extraction.
 
 - Ensured correct data types by formatting numbers as Numbers and text as general.
