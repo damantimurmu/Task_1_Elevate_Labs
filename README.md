@@ -1,8 +1,9 @@
 # Task_1_Data_Cleaning_and_Preprocessing
 Elevate Labs: Data Analyst Internship
 
-- Dataset Name: Medical Appointment No Shows
+- Objective: Clean and prepare a raw dataset
 - Tool Used: Microsoft Excel
+- Dataset Name: Medical Appointment No Shows
 
 ## Summary of Changes
 
