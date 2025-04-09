@@ -39,7 +39,9 @@ Clean and prepare a real-world dataset containing patient appointment records to
 
 | Task | Method Used |
 |------|-------------|
-| Handled Missing Values | - Use the filter feature on each column. - Identify blank cells in columns like age, neighbourhood, or others. - Fill them if possible, or remove rows where data is critical. |
+| Handled Missing Values | `- Use the filter feature on each column.` 
+                           `- Identify blank cells in columns like age, neighbourhood, or others.`
+                           `- Fill them if possible, or remove rows where data is critical.` |
 | Removed Duplicates | `.drop_duplicates()` |
 | Standardized Text (e.g., `gender`) | `.str.lower()` |
 | Converted Date Columns (`scheduledday`, `appointmentday`) | `pd.to_datetime()` |
