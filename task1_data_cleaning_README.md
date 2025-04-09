@@ -35,7 +35,7 @@ Clean and prepare a real-world dataset containing patient appointment records to
 
 ## Cleaning Steps Performed
 
-### Methode used in Excel:
+## Methode used in Excel:
 
 #### Handled Missing Values
 - Use the `filter` feature on each column.
@@ -58,7 +58,8 @@ Clean and prepare a real-world dataset containing patient appointment records to
 #### Filter Out Invalid Data
 - Apply `filters` to age column and `remove` rows with `age < 0` or `age > 100`.
 
-### Method used in Python:
+
+## Method used in Python:
 
 | Task | Method Used |
 |------|-------------|
