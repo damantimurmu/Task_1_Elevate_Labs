@@ -35,14 +35,29 @@ Clean and prepare a real-world dataset containing patient appointment records to
 
 ## Cleaning Steps Performed
 
-| Task | Method Used | Tools |
-|------|-------------|-------|
-| Handled Missing Values | `.isnull().sum()` | Python |
-| Removed Duplicates | `.drop_duplicates()` | Python & Excel |
-| Standardized Text (e.g., `gender`) | `.str.lower()` | Python |
-| Converted Date Columns (`scheduledday`, `appointmentday`) | `pd.to_datetime()` | Python |
-| Renamed Columns | Lowercase, underscores used instead of spaces | Python |
-| Data Type Fixes | Age → `int`, Dates → `datetime64[ns]` | Python |
+### Methode used in Excel:
+
+| Task | Method Used |
+|------|-------------|
+| Handled Missing Values | `- Use the filter feature on each column.`
+`-Identify blank cells in columns like age, neighbourhood, or others.`
+`- Fill them if possible, or remove rows where data is critical.` |
+| Removed Duplicates | `.drop_duplicates()` |
+| Standardized Text (e.g., `gender`) | `.str.lower()` |
+| Converted Date Columns (`scheduledday`, `appointmentday`) | `pd.to_datetime()` |
+| Renamed Columns | Lowercase, underscores used instead of spaces |
+| Data Type Fixes | Age → `int`, Dates → `datetime64[ns]` |
+
+### Method used in Python:
+
+| Task | Method Used |
+|------|-------------|
+| Handled Missing Values | `.isnull().sum()` |
+| Removed Duplicates | `.drop_duplicates()` |
+| Standardized Text (e.g., `gender`) | `.str.lower()` |
+| Converted Date Columns (`scheduledday`, `appointmentday`) | `pd.to_datetime()` |
+| Renamed Columns | Lowercase, underscores used instead of spaces |
+| Data Type Fixes | Age → `int`, Dates → `datetime64[ns]` |
 
 ---
 
