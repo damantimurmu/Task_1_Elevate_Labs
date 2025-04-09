@@ -37,26 +37,14 @@ Clean and prepare a real-world dataset containing patient appointment records to
 
 ## Methode used in Excel:
 
-#### Handled Missing Values
-- Use the `filter` feature on each column.
-- Identify `blank cells` in age, neighbourhood, or other columns.
-- Fill them if possible, or remove rows where data is critical.
-
-#### Removed Duplicates
-- Select all columns `(Ctrl + A).`
-- Go to `Data` → `Remove Duplicates.`
-
-#### Standardized Text
-- Use the `LOWER()` and `UPPER()` formulas in a new column for consistency.
-
-#### Converted Date Columns (`scheduledday`, `appointmentday`)
-- Used `Flash fill` and `LEFT()` formula
-
-#### Renamed Columns
-- Change column headers to lowercase (`LOWER()`), and replace spaces with underscores(`_`) (e.g., `PatientID` → `patient_id`).
-
-#### Filter Out Invalid Data
-- Apply `filters` to age column and `remove` rows with `age < 0` or `age > 100`.
+| Task | Method Used |
+|------|-------------|
+| Handled Missing Values | `filter` |
+| Removed Duplicates | `Remove Dublicates` |
+| Standardized Text (e.g., `gender`) | `LOWER()` and `UPPER()` |
+| Converted Date Columns (`scheduledday`, `appointmentday`) | `Flash fill` and `LEFT()` formulas |
+| Renamed Columns | Lowercase, underscores used instead of spaces |
+| Filter Out Invalid Data | Age → `filter`, and row `removed` |
 
 
 ## Method used in Python:
@@ -91,8 +79,8 @@ Clean and prepare a real-world dataset containing patient appointment records to
 |-------------|-------------|
 | `raw_data/medical_appointment_no_shows.csv` | Raw dataset |
 | `cleaned_data/cleaned_medical_appointment_no_shows.csv` | Cleaned dataset |
-| `notebooks/data_cleaning.ipynb` | Python cleaning code |
 | `excel/cleaning_steps.xlsx` | Excel version of cleaning process |
+| `notebooks/data_cleaning.ipynb` | Python cleaning code and `Python version of cleaning process` |
 | `summary.md` | Summary of all cleaning actions |
 
 ---
