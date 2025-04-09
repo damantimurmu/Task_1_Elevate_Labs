@@ -45,6 +45,7 @@ Clean and prepare a real-world dataset containing patient appointment records to
 | Converted Date Columns (`scheduledday`, `appointmentday`) | `Flash fill` and `LEFT()` formulas |
 | Renamed Columns | Lowercase, underscores used instead of spaces |
 | Filter Out Invalid Data | Age → `filter`, and row `removed` |
+| Data Type Fixes | Age → `int`, Dates → `datetime` |
 
 
 ## Method used in Python:
@@ -56,6 +57,7 @@ Clean and prepare a real-world dataset containing patient appointment records to
 | Standardized Text (e.g., `gender`) | `.str.lower()` |
 | Converted Date Columns (`scheduledday`, `appointmentday`) | `pd.to_datetime()` |
 | Renamed Columns | Lowercase, underscores used instead of spaces |
+| Filter Out Invalid Data | Age → `filter`, and row `removed` |
 | Data Type Fixes | Age → `int`, Dates → `datetime64[ns]` |
 
 ---
