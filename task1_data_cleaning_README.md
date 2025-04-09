@@ -48,7 +48,7 @@ Clean and prepare a real-world dataset containing patient appointment records to
 
 ## Cleaned Dataset Output
 - File: `cleaned_medical_appointment_no_shows.csv`
-- Total rows: `XXXX` (after removing duplicates/nulls)
+- Total rows: `110528` (no duplicated found)
 - Column formats standardized and validated
 
 ---
