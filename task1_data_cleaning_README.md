@@ -39,14 +39,15 @@ Clean and prepare a real-world dataset containing patient appointment records to
 
 | Task | Method Used |
 |------|-------------|
-| Handled Missing Values | `- Use the filter feature on each column.` |
-| | `- Identify blank cells in columns like age, neighbourhood, or others.` |
-| | `- Fill them if possible, or remove rows where data is critical.` |
-| Removed Duplicates | `.drop_duplicates()` |
-| Standardized Text (e.g., `gender`) | `.str.lower()` |
-| Converted Date Columns (`scheduledday`, `appointmentday`) | `pd.to_datetime()` |
-| Renamed Columns | Lowercase, underscores used instead of spaces |
-| Data Type Fixes | Age → `int`, Dates → `datetime64[ns]` |
+| Handled Missing Values | - Use the `filter` feature on each column. |
+| | - Identify `blank cells` in columns like age, neighbourhood, or others. |
+| | - Fill them if possible, or remove rows where data is critical. |
+| Removed Duplicates | Select all columns `(Ctrl + A).` |
+| | Go to `Data` → `Remove Duplicates.` |
+| Standardized Text | Use the `LOWER()` and `UPPER()` formula in a new column for consistency. |
+| Converted Date Columns (`scheduledday`, `appointmentday`) | `Flash fill` and `LEFT()` formula |
+| Renamed Columns | Change column headers to lowercase (`LOWER()`), and replace spaces with underscores(`_`) (e.g., `PatientID` → `patient_id`). |
+| Filter Out Invalid Data | Apply `filters` to age column and `remove` rows with `age < 0` or `age > 100`.
 
 ### Method used in Python:
 
@@ -63,7 +64,7 @@ Clean and prepare a real-world dataset containing patient appointment records to
 
 ## Cleaned Dataset Output
 - File: `cleaned_medical_appointment_no_shows.csv`
-- Total rows: `110528` (no duplicated found)
+- Total rows: `106981` (no duplicated found)
 - Column formats standardized and validated
 
 ---
