@@ -10,20 +10,20 @@ Clean and prepare a real-world dataset containing patient appointment records to
 
 **File**: `medical_appointment_no_shows.csv`  
 **Columns**:
-- `patientid`
-- `appointmentid`
-- `gender`
-- `scheduledday`
-- `appointmentday`
-- `age`
-- `neighbourhood`
-- `scholarship`
-- `hipertension`
-- `diabetes`
-- `alcoholism`
-- `handcap`
-- `sms_received`
-- `no_show`
+- `PatientId`
+- `AppointmentID`
+- `Gender`
+- `Scheduledday`
+- `Appointmentday`
+- `Age`
+- `Neighbourhood`
+- `Scholarship`
+- `Hipertension`
+- `Diabetes`
+- `Alcoholism`
+- `Handcap`
+- `SMS_received`
+- `No_show`
 
 ---
 
@@ -43,16 +43,19 @@ Clean and prepare a real-world dataset containing patient appointment records to
 | Searching Duplicates | `Conditional Formatting` | `df.duplicated().sum` |
 | Removed Duplicates | `Remove Dublicates` | `df.drop_duplicates()` |
 | Standardized column value (e.g., `Neighbourhood`) | `LOWER()` and `UPPER()` |  `df[].str.title()` or `df[].str.lower()`|
-| Converted Date Columns (`scheduledday`, `appointmentday`) | `Flash fill` and `LEFT()` formulas | `pd.to_datetime()` |
-| Renamed Columns | Lowercase, underscores used instead of spaces |
-| Filter Out Invalid Data | Age → `filter`, and row `removed` |
-| Data Type Fixes | Age → `int`, Dates → `datetime` |
+| Converted Date Columns (`scheduledday`, `appointmentday`) | `Flash fill` and `LEFT()` formulas | `pd.to_datetime(df['ScheduledDay']).dt.strftime('%d-%m-%Y')` |
+| Renamed Columns | `=LOWER()` and underscores used instead of spaces | `df.columns = [col.strip().lower().replace(" ", "_") for col in df.columns]` |
+| Data Type Fixes | Age → `int`, Dates → `datetime` | Elaborated in `data_cleaning_README.md` |
+| Filter Out Invalid Data | Age → `filter`, and row `removed` | `df[(df['age'] >= 0) & (df['age'] <= 100)]` |
 
 ---
 
 ## Cleaned Dataset Output
 - File: `cleaned_medical_appointment_no_shows.csv`
-- Total rows: `106981` (no duplicated found)
+- Original rows: `110527`
+- Rows after removing rows with invalid ages: `106987`
+- No. of invalid removed: `3540`
+- Total rows: `106987` (no duplicated found)
 - Column formats standardized and validated
 
 ---
