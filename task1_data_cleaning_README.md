@@ -85,6 +85,11 @@ Clean and prepare a real-world dataset containing patient appointment records to
 
 ---
 
+## Why Python over Excel?
+While Excel is useful for quick visual checks, Python with Pandas is far more efficient, reproducible, and scalable for cleaning larger datasets. It allows automation of repetitive tasks, better handling of data types, and provides a clearer audit trail—making it the preferred tool for data professionals.
+
+---
+
 ## Maintained by
 **Damanti Murmu**  
 Aspiring Business and Data Analyst |
