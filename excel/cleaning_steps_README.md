@@ -18,8 +18,8 @@
 - Used `Flash fill` and `LEFT()` formula
 
 #### Renamed Columns
-- Change column headers to lowercase (`LOWER()`), and replace spaces with underscores(`_`) (e.g., `PatientID` → `patient_id`).
+- Change column headers to lowercase (`LOWER()`), and replace spaces with underscores(`_`) (e.g., `PatientID` → `patientid`).
 
 #### Filter Out Invalid Data
-- Apply `filters` to age column and `remove` rows with `age < 0` or `age > 100`.
+- Apply `filters` to the age column and `remove` rows with `age < 0` or `age > 150`.
 
