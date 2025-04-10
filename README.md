@@ -60,12 +60,6 @@ Clean and prepare a real-world dataset containing patient appointment records to
 
 ---
 
-## Notes
-- `no_show` was kept as-is but might be re-encoded (Yes/No → 1/0) in further analysis
-- Checked and corrected unusual ages (e.g., negative or very high)
-
----
-
 ## Repository Structure
 
 | File/Folder | Description |
