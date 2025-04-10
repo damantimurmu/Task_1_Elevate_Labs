@@ -78,6 +78,13 @@ Clean and prepare a real-world dataset containing patient appointment records to
 
 ---
 
+## Insights Gained
+- Initial data contained minor inconsistencies in text casing and date formats.
+- No duplication records are found.
+- A few records had invalid age entries, which were filtered for accurate analysis.
+
+---
+
 ## Maintained by
 **Damanti Murmu**  
 Aspiring Business and Data Analyst |
