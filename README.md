@@ -65,10 +65,9 @@ Clean and prepare a real-world dataset containing patient appointment records to
 | File/Folder | Description |
 |-------------|-------------|
 | `raw_data/medical_appointment_no_shows.csv` | Raw dataset |
-| `cleaned_data/cleaned_medical_appointment_no_shows.csv` | Cleaned dataset |
-| `excel/cleaning_steps.xlsx` | Excel version of cleaning process |
-| `notebooks/data_cleaning.ipynb` | Python cleaning code and `Python version of cleaning process` |
-| `summary.md` | Summary of all cleaning actions |
+| `excel/README.md` and `cleaned_medical_appointment_no_shows.csv` | `Excel version of the cleaning process` and cleaned CSV file by Excel |
+| `notebooks/README.md`, `cleaned_medical_appointment_no_shows2.csv` and `data_cleaning.ipynb` | Python cleaning code and `Python version of cleaning process` |
+| `README.md` | Summary of all cleaning actions |
 
 ---
 
