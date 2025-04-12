@@ -11,7 +11,7 @@
 
 ![image](https://github.com/user-attachments/assets/2784f23f-6989-4527-b6bf-75369f49da9b)![image](https://github.com/user-attachments/assets/20a9bb18-60da-45e5-96a6-fa5eeb541397)
 
-## Data Cleaning
+## Data Exploration
 ### Step 1: Check for missing values
 ![image](https://github.com/user-attachments/assets/976215e0-a31f-4731-a757-e2a39078addd)
 
@@ -22,6 +22,7 @@
 
 ![image](https://github.com/user-attachments/assets/cb13a381-e468-4790-8f2e-dfa3562c8a6c)
 
+## Data Cleaning
 ### Step 3: Standardize text fields
 ![image](https://github.com/user-attachments/assets/7a2b1d71-7c0d-4c2a-9038-1eaefbf4a513)
 
